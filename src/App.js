@@ -14,7 +14,7 @@ function App() {
           <Link to='retrieveinfo'><Button text='Retrieve Information' className="twoColorBtn" /></Link>
         </div>
       <Routes>
-        <Route path='/' element={<AddPerson />} />
+        <Route path='/Directory_React_App/' element={<AddPerson />} />
         <Route path='/retrieveinfo' element={<RetrieveInfo />} />
       </Routes>
     </>
