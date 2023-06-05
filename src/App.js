@@ -14,12 +14,11 @@ function App() {
     <>
       <Header />
         <div className="twoB">
-          <Link to='/'><Button text='Add New Person' className="twoColorBtn" /></Link>
-          <Link to='retrieveinfo'><Button text='Retrieve Information' className="twoColorBtn" /></Link>
+          <Link to='/Directory_React_App'><Button text='Add New Person' className="twoColorBtn" /></Link>
+          <Link to='/retrieveinfo'><Button text='Retrieve Information' className="twoColorBtn" /></Link>
         </div>
-    { location.pathname === '/Directory_React_App/' ? (<AddPerson />) : ("") }
       <Routes>
-        <Route path='/' element={<AddPerson />} />
+        <Route path='/Directory_React_App' element={<AddPerson />} />
         <Route path='/retrieveinfo' element={<RetrieveInfo />} />
       </Routes>
     </>
